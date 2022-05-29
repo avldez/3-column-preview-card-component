@@ -1,0 +1,103 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.card-item {
+    padding: 50px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+}
+
+.card-container section:nth-child(1) {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-container section:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+.card-container section:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-container section:nth-child(1) a {
+    color: var(--bright-orange);
+}
+
+.card-container section:nth-child(2) a {
+    color: var(--dark-cyan);
+}
+
+.card-container section:nth-child(3) a {
+    color: var(--very-dark-cyan);
+}
+
+.card-item h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card-item p {
+    color: var(--white);
+    font-weight: 450;
+    line-height: 25px;
+}
+
+.card-item > div {
+    margin-bottom: 35px;
+}
+
+.card-item h2,
+.card-item p {
+    margin-bottom: 30px;
+}
+
+.card-item a {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid var(--white);
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 35px;
+}
+
+.card-item a:hover {
+    background-color: transparent;
+}
+
+.card-container section a:hover {
+    color: var(--white);
+}

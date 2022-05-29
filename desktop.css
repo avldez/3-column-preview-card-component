@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    min-width: 1024px;
+}
+
+.card-container > div {
+    display: flex;
+}
+
+.card-container section:nth-child(1) {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-container section:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-item {
+    height: 530px;
+    width: 300px;
+    padding: 50px 45px 65px 45px;
+}
+
+.card-item-learn {
+    margin-top: 100px;
+}
